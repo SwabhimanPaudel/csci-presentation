@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse available internships, workshops, and events.">
+    <title>Opportunities - MentorUp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MentorUp</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Opportunities Section -->
+    <main style="padding-top: 100px;">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Opportunities</h1>
+                    <p class="section-subtitle">Filter by type to find workshops, internships, programs, or events.</p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="filter-buttons" id="opportunityFilters" style="margin-bottom: 2rem;">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="workshop">Workshops</button>
+                    <button class="filter-btn" data-filter="internship">Internships</button>
+                    <button class="filter-btn" data-filter="program">Programs</button>
+                    <button class="filter-btn" data-filter="event">Events</button>
+                </div>
+
+                <!-- Opportunities Grid -->
+                <div class="cards-grid" id="opportunitiesGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="mentors.html">Mentors</a>
+                    <a href="opportunities.html">Opportunities</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#">Guidelines</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>hello@mentorship.edu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Student Project © 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        renderOpportunities();
+        initOpportunityFilters();
+    </script>
+</body>
+
+</html>

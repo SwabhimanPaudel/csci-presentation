@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse mentors by field and expertise.">
+    <title>Mentors - MentorUp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MentorUp</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mentors Section -->
+    <main style="padding-top: 100px;">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Browse Mentors</h1>
+                    <p class="section-subtitle">Search by name or filter by field to find mentors with relevant
+                        expertise.</p>
+                </div>
+
+                <!-- Search and Filter -->
+                <div class="search-filter">
+                    <div class="search-box">
+                        <input type="text" class="search-input" id="mentorSearch"
+                            placeholder="Search by name, job, or skill..." aria-label="Search mentors">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    <div class="filter-buttons" id="mentorFilters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="technology">Technology</button>
+                        <button class="filter-btn" data-filter="business">Business</button>
+                        <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                        <button class="filter-btn" data-filter="arts">Arts & Design</button>
+                        <button class="filter-btn" data-filter="education">Education</button>
+                    </div>
+                </div>
+
+                <!-- Mentors Grid -->
+                <div class="cards-grid" id="mentorsGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="mentors.html">Mentors</a>
+                    <a href="opportunities.html">Opportunities</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#">Guidelines</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>hello@mentorship.edu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Student Project © 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize mentors on page load
+        renderMentors();
+    </script>
+</body>
+
+</html>

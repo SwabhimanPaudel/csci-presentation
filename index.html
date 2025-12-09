@@ -1,0 +1,144 @@
+<!-- Name: Swabhiman Paudel
+     CWID: 30166521
+     Date: 12/01/2025
+      MentorUp connects young people with experienced mentors and real career opportunities. Browse mentors across technology, 
+      business, healthcare, arts, and education. Discover workshops, internships, programs, and events tailored to your goals.
+      All in one place, no barriers, just real connections.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with mentors and find opportunities in your field.">
+    <title>MentorUp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">MentorUp</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mentors.html">Mentors</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Background & Overlay -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Find Mentors & Opportunities</h1>
+        <p class="hero-subtitle">Browse experienced professionals by field, search for specific expertise, or explore
+          workshops, internships, and events tailored to your career goals.</p>
+        <div class="hero-cta">
+          <a href="mentors.html" class="btn btn-primary">Browse Mentors</a>
+          <a href="opportunities.html" class="btn btn-secondary">View Opportunities</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section">
+    <div class="container">
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Mentors</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1,200+</div>
+          <div class="stat-label">Connections</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">9</div>
+          <div class="stat-label">Opportunities</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Mentors -->
+  <section class="section" style="background: var(--color-bg-secondary); padding: 4rem 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Mentors</h2>
+        <p class="section-subtitle">Connect with professionals across technology, business, healthcare, arts, and
+          education.</p>
+      </div>
+      <div class="cards-grid" id="mentorsGrid">
+        <!-- Populated by JavaScript -->
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="mentors.html" class="btn btn-secondary">View All Mentors</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Opportunities -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Recent Opportunities</h2>
+        <p class="section-subtitle">Explore workshops, internships, and events to advance your career.</p>
+      </div>
+      <div class="cards-grid" id="opportunitiesGrid">
+        <!-- Populated by JavaScript -->
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="opportunities.html" class="btn btn-secondary">View All Opportunities</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <a href="index.html">Home</a>
+          <a href="mentors.html">Mentors</a>
+          <a href="opportunities.html">Opportunities</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <a href="#">Guidelines</a>
+          <a href="#">FAQ</a>
+          <a href="#">Privacy</a>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>hello@mentorship.edu</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Student Project © 2024</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Show limited results on homepage
+    renderMentors(mentorsData.slice(0, 3));
+    renderOpportunities(opportunitiesData.slice(0, 3));
+  </script>
+</body>
+
+</html>
